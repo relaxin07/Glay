@@ -158,16 +158,18 @@
 .hamburger-inner::before {
 	top: -10px; 
 
-    
- 
- 
-
 }
 
 .hamburger-inner::after {
 	bottom: -10px;
+	width: 33px;
+	
 	  
 }
+.hamburger-inner::after:active{
+	width: 40px;
+}
+
 .hamburger--squeeze .hamburger-inner {
 	transition-duration: 0.1s;
 	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); 
@@ -191,6 +193,7 @@
 	transition: top 0.1s ease, opacity 0.1s 0.14s ease;
 }
 .hamburger--squeeze.is-active .hamburger-inner::after {
+	width: 40px;
 	bottom: 0;
 	transform: rotate(-90deg);
 	transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);

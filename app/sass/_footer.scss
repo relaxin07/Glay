@@ -6,21 +6,28 @@
 		justify-content: space-between;
 		margin-top: 20px;
 		align-items: center;
+		background-image: url('../img/footer-bgr.jpg');
+		background-repeat: no-repeat;
+		background-position: 396px bottom;
+		padding-bottom: 15px;
 		
-		@media (max-width:990px)
+		@media (max-width:997px)
 		{
 			display:block;
 			text-align: center;
+			padding-bottom: 100px;
+			background-position: center bottom;
 		}
 
 
 	}
 	.contacts{
-		@media (max-width: 990px){
+		@media (max-width: 997px){
 			text-align: center;
 		}
 		&__info{
-			@media (max-width: 990px){
+			
+			@media (max-width: 997px){
 				display: block;
 				margin:0;
 			}	
@@ -34,7 +41,7 @@
 		&__item{
 			font-size: 13px;
 			&:first-child,&:last-child{
-				@media (max-width: 990px){
+				@media (max-width: 997px){
 					display: none;
 				}
 			}
@@ -75,7 +82,7 @@
 }
 .social{
 	margin-left: 22px;
-	@media (max-width: 990px){
+	@media (max-width: 997px){
 		display: none;
 	}
 	&__item{
@@ -91,5 +98,10 @@
 		font-size: 14px;
 		line-height: 24px;
 		font-family: 'open-sans-light';
+
+		&--text-uppercase{
+			text-transform: uppercase;
+		}
+
 	}
 }

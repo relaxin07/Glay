@@ -223,7 +223,11 @@ body {
   top: -10px; }
 
 .hamburger-inner::after {
-  bottom: -10px; }
+  bottom: -10px;
+  width: 33px; }
+
+.hamburger-inner::after:active {
+  width: 40px; }
 
 .hamburger--squeeze .hamburger-inner {
   -webkit-transition-duration: 0.1s;
@@ -264,6 +268,7 @@ body {
   transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
 
 .hamburger--squeeze.is-active .hamburger-inner::after {
+  width: 40px;
   bottom: 0;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -535,23 +540,29 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
-    @media (max-width: 990px) {
+            align-items: center;
+    background-image: url("../img/footer-bgr.jpg");
+    background-repeat: no-repeat;
+    background-position: 396px bottom;
+    padding-bottom: 15px; }
+    @media (max-width: 997px) {
       .footer__bottom {
         display: block;
-        text-align: center; } }
-  @media (max-width: 990px) {
+        text-align: center;
+        padding-bottom: 100px;
+        background-position: center bottom; } }
+  @media (max-width: 997px) {
     .footer .contacts {
       text-align: center; } }
   .footer .contacts__info {
     font-size: 13px; }
-    @media (max-width: 990px) {
+    @media (max-width: 997px) {
       .footer .contacts__info {
         display: block;
         margin: 0; } }
   .footer .nav__item {
     font-size: 13px; }
-    @media (max-width: 990px) {
+    @media (max-width: 997px) {
       .footer .nav__item:first-child, .footer .nav__item:last-child {
         display: none; } }
     .footer .nav__item:hover:before {
@@ -593,7 +604,7 @@ body {
 
 .social {
   margin-left: 22px; }
-  @media (max-width: 990px) {
+  @media (max-width: 997px) {
     .social {
       display: none; } }
   .social__item {
@@ -606,3 +617,5 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-family: 'open-sans-light'; }
+  .copyright__item--text-uppercase {
+    text-transform: uppercase; }
