@@ -52,11 +52,7 @@ gulp.task('sprite', function () {
 gulp.task('scripts',function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		'app/libs/owl-carousel-2/dist/owl.carousel.min.js',
-		"app/libs/wowAnimate/wow.min.js",
-		'node_modules/tether/dist/js/tether.min.js',
-		'node_modules/bootstrap/dist/js/bootstrap.min.js'
+		
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
