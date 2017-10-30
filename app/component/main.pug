@@ -1,0 +1,33 @@
+section.main
+	.container
+			h1.main__title Золото
+			.main__about Надежная скупка золота в Москве с выгодными ценам и прекрасной репутацией - это правильный выбор! Наша компания скупает: ювелирные изделия, золотые украшения, старое золото и ювелирный лом. 
+			.main__services.main__services--text-uppercase У нас вы сможете дорого продать золотые монеты и слитки, золотые коронки или иначе говоря стоматологическое золото.
+
+			.form-container
+				form.form
+					.form__field
+							input(type="text" id = "email" class="form__input"  placeholder="Какой вес изделия?").form__input-weight
+
+					-var items = ['375','500','583','585','750','875','916','958','999']
+					.form__weight
+						ul.radio
+							for item in items
+							
+								li.radio__elem= item
+									
+									label(for='w'+item).radio__label 
+									input(type="radio" name="radio" value=item id="w" + item).radio__item
+					.form__fields
+						input(type="text" class="form__input" placeholder="Имя")
+						input(type="tel" class="form__input" placeholder="Номер Телефона")
+						input(type="email" class="form__input" placeholder="E-mail")
+					.form__price 45 344 
+						span.form__price-span  я
+					input(type="submit" value="Оформить заявку").button.button--red
+					
+
+				.form-container__text-bottom Состояние сдаваемых изделий (новое/старое/лом) не влияет на их оценку. Нет пробы (клейма) на изделии ?  - Не проблема, бесплатно определим пробу на месте. 
+				.form-container__img
+						img(src="img/main-img.png")
+				

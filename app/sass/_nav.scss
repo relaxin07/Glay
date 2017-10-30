@@ -1,0 +1,33 @@
+.nav{
+	&__item{
+		color:#000;
+		text-decoration: none;
+		display: inline-block;
+		position: relative;
+		margin-right: 23px;
+		font-family: 'open-sans-light';
+		font-size: 	16px;
+		line-height: 24px;
+		&:hover,&:active{
+			
+			&:before{
+				display: block;
+				position: absolute;
+				content: " ";
+				background-color: #ffd200;
+				padding: 13px;
+				top:-13px;
+				left:-13px;
+				bottom:-13px;
+				right:-13px;
+				z-index: -1;
+				border-radius: 25px;
+
+			}
+			
+
+		}
+
+
+	}
+}

@@ -1,0 +1,19 @@
+.contacts { 
+	
+	
+	&__info{
+		
+		display: inline-block;
+		margin-left: 50px;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 	'open-sans-light';
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	&__phone{
+		text-decoration: none;	
+		color:#000;
+	}
+}

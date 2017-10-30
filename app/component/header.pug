@@ -1,0 +1,31 @@
+header.header
+	.container
+		.header__container
+			.b-hamburger
+				.hamburger.hamburger--squeeze(href="#")
+					span.hamburger-box
+						span.hamburger-inner
+					span.name-menu-hamburger
+				
+
+			-var  items = ['Главная', 'Скупка золота', 'Контакты']
+				nav.header__nav.nav
+					for item in items
+						a(href="#").nav__item= item 
+				.logo
+					img(src="img/header--logo.png" alt="").logo__img
+				.header__contacts.contacts
+					.contacts__info  ул. Тверская 34, офис 322
+					.contacts__info 
+						a(href="#").contacts__phone +7 945 344 12 90
+					.contacts__icon.icon
+						a(href="").icon__item.telegram-icon
+						a(href="").icon__item.viber-icon
+						a(href="").icon__item.watts-icon
+				
+				
+			.nav-tablet
+					for item in items
+						a(href="#").nav-tablet__item= item
+
+
